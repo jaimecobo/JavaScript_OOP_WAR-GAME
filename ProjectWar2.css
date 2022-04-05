@@ -1,0 +1,142 @@
+body {
+  background-image: url("table.jpeg");
+  background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: 1400px auto;
+  background-position: 50% 50%;
+  margin: -20rem 0rem;
+  padding: 0rem 0rem;
+}
+
+.cardBox {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  margin: 4rem 0rem 0rem;
+}
+
+.card {
+  display: block;
+  background-color: rgb(163, 56, 56);
+  border: solid 2px rgb(244, 255, 179);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 0%;
+}
+
+#warZone {
+  width: fit-content;
+}
+
+.pageText {
+  text-align: center;
+  color: white;
+  margin-top: 10rem;
+}
+
+.drawButton {
+  background-color: rgb(163, 56, 56);
+  width: 5rem;
+  top: -38rem;
+}
+.drawButton:hover {
+  background-color: rgb(119, 41, 41);
+}
+
+.refreshButton {
+  background-color: rgb(0, 0, 0);
+  width: 7rem;
+  top: -30rem;
+}
+.refreshButton:hover {
+  background-color: rgb(53, 53, 53);
+}
+
+
+.lowerButtons {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: white;
+  align-items: center;
+  text-align: center;
+  border: rgb(244, 255, 179) solid 2px;
+  border-radius: 5px;
+  height: 2rem;
+  margin: 1rem 0rem;
+  transition-duration: .1s;
+  box-shadow: 0 5px rgb(109, 109, 109);
+  cursor: pointer;
+}
+
+.lowerButtons:active {
+  transform: translateY(5px);
+  box-shadow: 0 3px rgb(71, 71, 71);
+}
+
+.buttonPlacement {
+  display: flex;
+  justify-content: center;
+}
+
+.animation1 {
+  position: relative;
+  animation-name: shiftRight;
+  animation-fill-mode: forwards;
+  animation-duration: 1.2s;
+  animation-timing-function: linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes shiftRight {
+  0% {
+    left: -31.1rem;
+    top: -20.5rem;
+    opacity: 0%;
+  }
+  70% {
+    left: -31.1rem;
+    top: -28.5rem;
+    opacity: 100%;
+    transform: rotate(-10deg);
+  }
+  100% {
+    left: -6.4rem;
+    top: -20.5rem;
+    transform: rotate(180deg);
+  }
+}
+
+.animation2 {
+  position: relative;
+  animation-name: shiftLeft;
+  animation-fill-mode: forwards;
+  animation-duration: 1.2s;
+  animation-timing-function: linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes shiftLeft {
+  0% {
+    left: 31rem;
+    top: -39.6rem;
+    opacity: 0%;
+  }
+  70% {
+    left: 31rem;
+    top: -47.6rem;
+    opacity: 100%;
+    transform: rotate(10deg);
+  }
+  100% {
+    left: 6.4rem;
+    top: -39.6rem;
+    transform: rotate(-180deg);
+  }
+}
